@@ -3,10 +3,10 @@ import axios from "axios";
 import bodyParser from "body-parser";
 import path from "path";
 import { fileURLToPath } from "url";
-import URL from "./models/url.js";
-import urlRoute from "./routes/url.js";
-import staticRoute from "./routes/staticRoutes.js";
-import userRoute from "./routes/user.js";
+// import URL from "./models/url.js";
+// import urlRoute from "./routes/url.js";
+// import staticRoute from "./routes/staticRoutes.js";
+// import userRoute from "./routes/user.js";
 
 const app = express();
 app.set("view engine", "ejs");
