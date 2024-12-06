@@ -16,9 +16,9 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(express.json()); // for parsing application/json
 // app.use(express.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
-app.use("/url", urlRoute);
-app.use("/user", userRoute);
-app.use("/", staticRoute);
+// app.use("/url", urlRoute);
+// app.use("/user", userRoute);
+// app.use("/", staticRoute);
 
 const PORT = process.env.PORT || 3000;
 // const stockApi = "demo";
