@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 300px;
+      "
+    >
+      <div style="border: solid 1px; padding: 10px">
+        <h2>
+          <p><%=content%></p>
+
+          <p>Secret: <%=content.secret%></p>
+          <p><%=content.emScore%></p>
+          <p><%=content.username%></p>
+        </h2>
+      </div>
+
+      <form action="/noAuth" method="post">
+        <button type="submit" style="margin: 10px">No Auth</button>
+      </form>
+
+      <form action="/basicAuth" method="post">
+        <button style="margin: 10px">Basic Auth</button>
+      </form>
+      <form action="/apiKey" method="post">
+        <button style="margin: 10px">Api Key</button>
+      </form>
+
+      <form action="/token" method="post">
+        <button style="margin: 10px">Token</button>
+      </form>
+    </div>
+  </body>
+</html>

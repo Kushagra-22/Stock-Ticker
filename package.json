@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "autocannon": "^8.0.0",
+    "axios": "^1.7.7",
+    "body-parser": "^1.20.3",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "finnhub": "^1.2.19",
+    "mongoose": "^8.8.3",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.7",
+    "pg": "^8.13.1",
+    "shortid": "^2.2.16",
+    "tailwind": "^4.0.0",
+    "uuid": "^11.0.3"
+  },
+  "name": "book-navigator",
+  "version": "1.0.0",
+  "main": "stocks.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node stocks.js",
+    "dev": "nodemon stocks.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

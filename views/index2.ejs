@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Activity</title>
+  </head>
+  <body
+    style="
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    "
+  >
+    <div>
+      <h1>Random Activity</h1>
+      <form action="/submit " method="post">
+        <label for="">
+          <select id="type" name="">
+            <option value="Education">Education</option>
+            <option value="random">Random Type</option>
+            <option value="Charity">Charity</option>
+            <option value="Recreational">Recreational</option>
+          </select>
+        </label>
+
+        <label for="">
+            <select name="" id="">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+
+            </select>
+        </label>
+        <input type="submit" value="Go">
+      </form>
+    </div>
+    <img style="margin-top: 30px" src="<%=pic%>" alt="" />
+    <p>Here's a fun activity for you: <%= activity %></p>
+
+    <p><%=punch%></p>
+  </body>
+</html>
