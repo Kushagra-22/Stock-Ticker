@@ -3,7 +3,6 @@ import axios from "axios";
 import bodyParser from "body-parser";
 import path from "path";
 import { fileURLToPath } from "url";
-import connectToMongoDB from "./connectDB.js";
 import URL from "./models/url.js";
 import urlRoute from "./routes/url.js";
 import staticRoute from "./routes/staticRoutes.js";
@@ -129,9 +128,9 @@ app.get("/form", (req, res) => {
   res.render("stock3.ejs");
 });
 
-connectToMongoDB("mongodb://localhost:27017/short-url").then(() =>
-  console.log("Mongodb connected")
-);
+// connectToMongoDB("mongodb://localhost:27017/short-url").then(() =>
+//   console.log("Mongodb connected")
+// );
 
 app.listen(PORT, () => {
   console.log(`http://localhost:3000/`);
